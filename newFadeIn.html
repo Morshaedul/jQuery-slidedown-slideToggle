@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fadeIn</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <button>Click and see</button><br> <br>
+    <div id="div1" style="width: 100px; display:none; height: 100px; background:red; "></div> <br>
+    <div id="div2" style="width: 100px; display:none; height: 100px; background:rgb(20, 236, 20); "></div><br>
+    <div id="div3" style="width: 100px; display:none; height: 100px; background:rgb(28, 50, 245); "></div>
+     
+    <script>
+        $(document).ready(function() {
+            $('button').click(function() {
+                $("#div1").fadeToggle(3000);
+                $("#div2").fadeToggle(6000);
+                $("#div3").fadeToggle(9000);
+            })
+        })
+    </script>
+
+
+
+</body>
+</html>
